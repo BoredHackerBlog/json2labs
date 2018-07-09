@@ -4,7 +4,7 @@ A project that generates virtual labs based on a json configuration file.
 # About
 json2labs utilizes a json configuration file as an input and starts up virtual environment based on it.
 
-The minimega project (minimega.org), created by Sandia National Labs, is for virtual machine management.
+The minimega project (minimega.org), created by Sandia National Labs, is used for virtual machine management.
 
 Minimega uses qemu/kvm, dnsmasq, and openvswitch for virtualization and networking. Minimega provides miniweb for VM management and access. 
 
@@ -70,6 +70,8 @@ sudo python /opt/json2labs/json2labs.py --test
 }
 ```
 The configuration file above creates a Kali VM with 1G of RAM, with IP between 192.168.1.10-50.
+
+dhcp and internet parts are optional. Check generate_config.py for more info.
 
 # Creating VM's
 You can provide .iso files or you can provide .qcow2 files.
