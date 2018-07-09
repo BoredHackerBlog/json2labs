@@ -12,7 +12,7 @@ Virtual machines created by json2labs can be accessed via Web (using noVNC) or V
 
 Benefits: Changes made to the VM are not saved to disk. Minimega uses qemu/kvm in snapshot mode. Since it's snapshot mode, you can use one qcow2 or iso file to create multiple VM's as well. KSM is used to keep the total memory usage down.
 
-Limitations/Issues: For VNC connection, the mouse cursor does not behave correctly, depending on the VNC software. Use novnc via web server running on port 9001, since that seems to work fine. For the "internet" option, only one CIDR is supported for now.
+Limitations/Issues: For VNC connection, the mouse cursor does not behave correctly, depending on the VNC software. Use novnc via web server running on port 9001, since that seems to work fine. For the "internet" option, only one CIDR is supported for now. If you use the dhcp option, VM's will be able to access open ports on the host machine, via the tap.
 
 Check screenshots directory for screenshots and usage example.
 
